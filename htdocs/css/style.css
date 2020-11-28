@@ -1,0 +1,502 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&display=swap" rel="stylesheet');
+
+/*---------------------------------
+* 基本設定
+---------------------------------*/
+html{
+    font-size: 62.5%;
+    width: calc(100vw - 15px); /* マンガビューアー起動時にスクロールバーの分左にずれる */
+}
+
+body{
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
+	font-feature-settings: "palt";
+	line-height: 1.85;
+	letter-spacing: 0.05em;
+	-webkit-font-smoothing: antialiaased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+dt{
+    float: left;
+}
+  
+dd{
+    margin: 0 0 10px 70px ;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+/*---------------------------------
+* 汎用class
+---------------------------------*/
+.text-center{
+	text-align: center;
+}
+
+.background{
+    background-image: url(../images/loop.png);
+    background-repeat: repeat;
+}
+
+.space{
+    max-width: 970px;
+    margin: auto;
+}
+
+.border{
+    border: 10px solid #000;
+}
+
+.border2{
+    border: 7px solid #000;
+}
+
+.border3{
+    border: 9px solid #000;
+}
+
+.border-w{
+    border: 7px solid #fff;
+}
+
+.box{
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    margin: 60px 30px 0;
+}
+
+.ball{
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    margin: 30px auto 0;
+}
+
+.icon{
+    color: #000;
+    font-size: 7rem;
+    text-align: center;
+    position: relative;
+	top : 46%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container{
+    display: flex;
+}
+
+.inbox{
+    width: 600px;
+    margin: 30px auto 40px;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+/*---------------------------------
+* タイプテキスト
+---------------------------------*/
+
+.text-content{
+    height: 100vh;
+    width: 100vw;
+}
+
+.type-text{
+    color: #fff;
+    font-size: 20px;
+    line-height: 100vh;
+}
+.ityped-cursor {
+    font-size: 1em;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+    color: #fff;
+}
+@keyframes blink {
+100% {
+    opacity: 0;
+}
+}
+@-webkit-keyframes blink {
+100% {
+    opacity: 0;
+}
+}
+@-moz-keyframes blink {
+100% {
+    opacity: 0;
+}
+}
+
+/*---------------------------------
+* header
+---------------------------------*/
+.header{
+    background-color: black;
+    color: #fff;
+    -ms-interpolation-mode: nearest-neighbor;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+.title{
+    padding: 20px 0 10px;
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.logo{
+    height: 40px;
+    margin: auto;
+}
+
+.haikei{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.enemy{
+    height: 260px;
+	position: absolute;
+	top : 270px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+
+.attack{
+    height: 180px;
+	position: absolute;
+	top : 280px;
+	left: 51%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.dan1{
+    height: 20px;
+    background-color: #555555;
+}
+
+.dan2{
+    height: 20px;
+    background-color: #939393;
+}
+
+.dan3{
+    height: 20px;
+    background-color: #cecece;
+}
+
+.red{
+    color: red;
+}
+
+/*---------------------------------
+* RPG
+---------------------------------*/
+
+.rpg-box{
+    margin: 0 30px;
+    font-weight: 700;
+}
+
+.rpg-left{
+    min-width: 200px;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.rpg-right{
+    width: 700px;
+    padding:  15px 30px 20px 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    line-height : 42.667px;
+}
+
+.sankaku{
+    margin-top: 6px;
+    opacity: 0;
+}
+
+.opacity-on{
+    opacity: 1;
+}
+
+/*--ゆっくり出現させるなら / transition: all .●s; --*/
+
+.header dd{
+    margin-left: 30px;
+}
+
+.header p{
+    margin-bottom: 10px;
+}
+
+
+
+/*---------------------------------
+* basic
+---------------------------------*/
+
+.ph{
+    width: 200px;
+    height: 236px;
+    background-color: #555555;
+    border-radius: 20px;
+}
+
+.basic-item{
+    margin: 0 0 0 auto;
+}
+
+.dd-last{
+    margin: 0 0 0 110px ;   
+}
+
+/*---------------------------------
+* career
+---------------------------------*/
+
+.fa-hourglass-start.icon{
+	top : 51%;
+}
+
+.manga-thumbnail{
+    width: 550px;
+    height: 250px;
+    margin: 30px auto;
+}
+
+/*---------------------------------
+* btn
+---------------------------------*/
+
+.btn{
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.btn-custom01 {
+    margin-bottom: 0.5rem;
+    padding: 0;
+    border-radius: 0.75rem;
+}
+
+.btn-custom01:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translate3d(0, 0.75rem, -1rem);
+    transform: translate3d(0, 0.75rem, -1rem);
+
+    border: 4px solid #000;
+    border-radius: inherit;
+    background: #ccc100;
+    -webkit-box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom01:after {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-custom01-front {
+    position: relative;
+    display: block;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 4px solid #000;
+    border-radius: inherit;
+    background: #fff100;
+}
+
+.btn-custom01:hover {
+    -webkit-transform: translate(0, 0.25rem);
+    transform: translate(0, 0.25rem);
+    background: #fff100;
+    }
+
+.btn-custom01:hover:before {
+    -webkit-transform: translate3d(0, 0.5rem, -1rem);
+    transform: translate3d(0, 0.5rem, -1rem);
+    -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom01:active {
+    -webkit-transform: translate(0rem, 0.75rem);
+    transform: translate(0rem, 0.75rem);
+}
+
+.btn-custom01:active:before {
+    -webkit-transform: translate3d(0, 0, -1rem);
+    transform: translate3d(0, 0, -1rem);
+    -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.laymic_root {
+    z-index: 10;
+  }
+
+/*---------------------------------
+* reason
+---------------------------------*/
+
+.fa-heart.icon{
+	top : 54%;
+}
+
+/* モーダルCSS */
+.modalArea {
+    display: none;
+    position: fixed;
+    z-index: 10; /*サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: calc(100vw);
+    height: 100%;
+  }
+  
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.9);
+  }
+  
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding: 10px 30px;
+    background-color: #fff;
+    height : 90%;
+    width: 90%;
+    overflow : auto;
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+/*---------------------------------
+* skill
+---------------------------------*/
+
+.fa-star.icon{
+	top : 49%;
+}
+
+/*---------------------------------
+* portfolio
+---------------------------------*/
+
+.fa-gem.icon{
+    top : 53%;
+    font-size: 6.8rem;
+}
+
+/*---------------------------------
+* footer
+---------------------------------*/
+
+.fotter_dan{
+    margin-top: 60px;
+}
+
+.footer{
+    background-color: black;
+    color: #fff;
+    -ms-interpolation-mode: nearest-neighbor;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 896px){
+
+}

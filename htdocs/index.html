@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ja" id="hidden">
+<head>
+<meta charset="UTF-8">
+<title>nagi</title>
+<meta name="description" content="山下凪がわかるサイト"/>
+<meta name="keywords" content=""/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- laymic.js v2.2.2 - github.com/dettalant/laymic -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dettalant/laymic@2.2.2/dist/laymic.min.css">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body class="background">
+
+<!--header-->
+<header class="header">
+    <div class="title">
+        <img src="images/rogo.png" alt="タイトルロゴ" class="logo">
+        <h1 class="text-center">Introduction of Nagi Yamashita.</h1>
+    </div>
+
+    <div class="rpg">
+        <img src="images/haikei.png" alt="RPG背景" class="haikei">
+        <img src="images/enemy.png" alt="RPGエネミー" class="enemy" id="enemy">
+        <img src="images/attack.png" alt="RPGアタック" class="attack" id="at">
+    </div>
+
+    <div class="space"> 
+        <div class="container rpg-box">
+
+            <div class="rpg-left border-w">
+            <div class="menu">
+                <dl class="menu1" id="sankaku1">
+                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on" id="sankaku-r"></dt>
+                    <dd onclick="clickBtn1(),clickBtn2()" style="cursor:pointer;" id="at-btn">たたかう</dd>
+                </dl>
+
+                <dl class="menu2" id="sankaku2">
+                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dd><a href="#1">じょうほう</a></dd>
+                </dl>
+
+                <dl class="menu3" id="sankaku3">
+                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dd><a href="#2">あらすじ</a></dd>
+                </dl>
+
+                <dl class="menu4" id="sankaku4">
+                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dd><a href="#3">りゆう</a></dd>
+                </dl>
+
+                <dl class="menu5" id="sankaku5">
+                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dd><a href="#4">スキル</a></dd>
+                </dl>
+
+                <dl class="menu6" id="sankaku6">
+                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dd class="dd-last"><a href="#5">おたから</a></dd>
+                </dl>
+            </div>
+        
+            </div>
+                
+            <div class="rpg-right border-w">
+                <div id="at-text0"><p id="js-target">ヤマシタ ナギ が あらわれた ！ </p></div>
+                <div id="at-text1"><p id="js-target1">サイヨウ タントウシャ の こうげき ！<br>ヤマシタ ナギ に ３６ダメージ ！<br>「 イタッ ！ なにすん ねん ！ 」<br>どうやら おこって いるようだ 。 </p></div>
+                <div id="at-text2"><p id="js-target2" style='color:red;'>サイヨウ タントウシャ は こうげき しようとした ！<br>しかし ヤマシタ ナギ に とめられた ！<br>「 イタイ いうてる やん ！ やめーや ！」 </p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dan1"></div>
+    <div class="dan2"></div>
+    <div class="dan3"></div>
+</header>
+<!--end // header-->
+
+<main class="space">
+
+<!--basic-->
+<section id="basic">
+    <div id="1" class="box border">
+        <div class="ball border3"><i class="fas fa-user-alt icon"></i></div>
+        <h2 class="text-center">基本情報</h2>
+
+        <div class="container inbox">
+            <div class="ph border2"><img src="ダミー" alt="本人写真"></div>
+            <div class="basic-item">
+                <dl>
+                <dt>名前</dt>
+                <dd>山下 凪</dd>
+                <dt>年齢</dt>
+                <dd>24</dd>
+                <dt>性別</dt>
+                <dd>男性</dd>
+                <dt>現職</dt>
+                <dd>広告業界（印刷物・webなど）<br>営業、ディレクター、ライター</dd>
+                <dt>希望職種</dt>
+                <dd class="dd-last">オープンポジション</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end // basic-->
+
+<!--career-->
+<section id="career">
+    <div id="2" class="box border">
+        <div class="ball border3"><i class="fas fa-hourglass-start icon"></i></div>
+        <h2 class="text-center">これまでのあらすじ</h2>
+
+        <div class="inbox text-center">
+
+            <p>お堅い内容でも、興味のない話でも、<br>コマが割ってあるだけで、おもしろく読めてしまう。</p>
+            <p>マンガには、そんな不思議な力がありますよね。</p>
+            <p>「どうせなら、履歴書もおもしろく読んでほしい。」<br>そんな想いから、僕の経歴をマンガにしてみました。</p>
+
+            <img src="ダミー" alt="マンガサンプル画像（下に指さしてはみ出す？）「描くんにめっちゃ時間かかってんから、ちゃんと下のボタン押して、読んでや！？」" class="manga-thumbnail ph border2">
+
+            <div class="laymic_template" data-viewer-id="manga1" style="display:none;">
+                <img src="/images/manga_sample.jpg">
+                <img src="/images/manga_sample.jpg">
+                <img src="/images/manga_sample.jpg">
+            <!-- 以下、追加したい画像の数だけ書き加える -->
+            </div>
+            <button class="btn laymic_opener btn-custom01" type="button" data-for="manga1"><span class="btn-custom01-front">マンガを読む</span></button>
+            <!-- laymic.js v2.2.2 - github.com/dettalant/laymic -->
+
+        </div>
+    </div>
+</section>
+<!--end // career-->
+
+<!--reason-->
+<section id="reason">
+    <div id="3" class="box border">
+        <div class="ball border3"><i class="fas fa-heart icon"></i></div>
+        <h2 class="text-center">はたらきたい理由</h2>
+
+        <div class="inbox text-center">
+            <p>いっぱい、はたらきたい理由を書きたい。<br>でも、長文って読みづらい。</p>
+            <p>そこで、インタビュー形式なら<br>長くても読みやすいかも、と考えました。</p>
+            <p>自分で自分にインタビューをする。<br>はじめての経験でしたが、シュールでしたね。</p>
+            <button id="openModal" class="btn btn-custom01" type="button"><span class="btn-custom01-front">インタビューを読む</span></button>
+        </div>
+    </div>
+</section>
+
+<!-- モーダルエリアここから -->
+<section id="modalArea" class="modalArea">
+  <div id="modalBg" class="modalBg"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <h4>ダミーダミーダミー</h4>
+      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+    </div>
+    <div id="closeModal" class="closeModal"><!-- closeここでリデザインする -->
+      ×
+    </div>
+  </div>
+<!-- モーダルエリアここまで -->
+
+
+</section>
+<!--end // reason-->
+
+<!--skill-->
+<section id="skill">
+    <div id="4" class="box border">
+        <div class="ball border3"><i class="fas fa-star icon"></i></div>
+        <h2 class="text-center">おぼえているスキル</h2>
+
+        <div class="inbox text-center">
+            <p>現職がディレクター兼ライターで、<br>元営業マンだけど、マンガも描ける。</p>
+            <p>僕はわりと”雑食系”。<br>いろいろできるのが、強みです。</p>
+            <img src="ダミー" alt="食いしん坊カラスのイラスト">
+        
+            <h3>営業トーク</h3>
+            <h3>制作進行</h3>
+            <h3>コーディング</h3>
+            <h3>イラスト</h3>
+            <h3>ライティング</h3>
+            <h3>企画立案</h3>
+
+        </div>
+    </div>
+
+</section>
+<!--end // skill-->
+
+<!--portfolio-->
+<section id="portfolio">
+    <div id="5" class="box border">
+        <div class="ball border3"><i class="fas fa-gem icon"></i></div>
+        <h2 class="text-center">おたからリスト</h2>
+
+        <div class="inbox text-center">
+            <p>僕が今までにつくってきた、<br>さまざまな実績をご紹介します。</p>
+        </div>
+    </div>
+
+</section>
+<!--end // portfolio-->
+
+</main>
+
+<div class="dan3 fotter_dan"></div>
+<div class="dan2"></div>
+<div class="dan1"></div>
+
+<!--footer-->
+<footer class="footer">
+
+    <p>ヤマシタ ナギ は<br>なかま に なりたそう に<br>こちら を みている ！</p>
+
+    <ul>
+        <li>仲間にする</li>
+        <li>採用する</li>
+        <li>登用する</li>
+        <li>雇う</li>
+    </ul>
+
+</footer>
+<!--end // footer-->
+
+
+<!--------------------------------
+    script
+---------------------------------->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<!-- 点滅 -->
+<script type="text/javascript">
+    // 点滅「on」状態
+    function show()
+    {
+        if (document.getElementById)
+        document.getElementById("enemy").style.visibility = "visible";
+    }
+    // 点滅「off」状態
+    function hide()
+    {
+        if (document.getElementById)
+        document.getElementById("enemy").style.visibility = "hidden";
+    }
+
+</script>
+<!--end //  点滅 -->
+
+<!-- こうげきjs -->
+<script>
+    // 初期表示は非表示
+    document.getElementById("at").style.display ="none";
+    document.getElementById("at-text1").style.display ="none";
+    document.getElementById("at-text2").style.display ="none";
+    
+    function clickBtn1(){
+        const at = document.getElementById("at");
+        const at0 = document.getElementById("at-text0");
+        const at1 = document.getElementById("at-text1");
+        const at2 = document.getElementById("at-text2");
+    
+        if(at.style.display=="block"){
+            at1.style.display ="none";
+            at2.style.display ="block";
+            $('#js-target2').t({
+            speed_vary:false,
+            blink:false,
+            speed:60,
+            });
+            const div = document.getElementById('at-btn');
+            div.classList.add('red');
+            document.getElementById('sankaku-r').src='/images/sankaku-r.png';
+        }
+        else{
+            // blockで表示
+            at0.style.display ="none";
+            at.style.display ="block";
+            at1.style.display ="block";
+
+            $('#js-target1').t({
+            speed_vary:false,
+            blink:false,
+            speed:60,
+            });
+        
+                // 点滅効果を出すために「on」と「off」の状態を450ミリ秒ごとに切り替え
+                // 4500ミリ秒後に終了 (5秒未満)
+            for(var i=900; i < 3600; i=i+900)
+            {
+            setTimeout("hide()",i);
+            setTimeout("show()",i+450);
+            }
+        }
+    }
+
+</script>
+<!--end //  こうげきjs -->
+
+<!-- スクロールさせるjs -->
+<script>
+  $(function(){
+    // #で始まるリンクをクリックしたら実行されます
+    $('a[href^="#"]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒で記述
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });
+</script>
+<!--end //  スクロールさせるjs -->
+
+<!-- laymic.js v2.2.2 - github.com/dettalant/laymic （マンガビューアー） -->
+<script src="https://cdn.jsdelivr.net/npm/@dettalant/laymic@2.2.2/dist/laymic.iife.min.js"></script>
+<script>
+new laymic.LaymicApplicator(".laymic_template", {
+    // 原稿画像横幅
+    pageWidth: 690,
+    // 原稿画像縦幅
+    pageHeight: 976,
+})
+</script>
+<!--end //  laymic.js v2.2.2 - github.com/dettalant/laymic （マンガビューアー） -->
+
+<!-- タイプテキスト -->
+<script>
+$(function(){
+  $('#js-target').t({
+    speed_vary:false,
+    blink:false,
+    speed:60,
+  });
+});
+</script>
+<script src="/js/t.min.js"></script>
+<!--end //  タイプテキスト -->
+
+<!-- モーダル -->
+<script>
+$(function () {
+    const hidden = document.getElementById("hidden");
+    $('#openModal').click(function(){
+    hidden.classList.add('hidden');
+    $('#modalArea').fadeIn();    
+    });
+    $('#closeModal , #modalBg').click(function(){
+    hidden.classList.remove('hidden');
+    $('#modalArea').fadeOut();
+      
+    });
+  });
+</script>
+<!--end //  モーダル -->
+
+<!-- メニュー▲ -->
+<script>
+$("#sankaku1").hover(function() {
+    $("#sankaku1 img").addClass('opacity-on');
+    $("#sankaku2 img").removeClass('opacity-on');
+    $("#sankaku3 img").removeClass('opacity-on');
+    $("#sankaku4 img").removeClass('opacity-on');
+    $("#sankaku5 img").removeClass('opacity-on');
+    $("#sankaku6 img").removeClass('opacity-on');
+  });
+
+  $("#sankaku2").hover(function() {
+    $("#sankaku1 img").removeClass('opacity-on');
+    $("#sankaku2 img").addClass('opacity-on');
+    $("#sankaku3 img").removeClass('opacity-on');
+    $("#sankaku4 img").removeClass('opacity-on');
+    $("#sankaku5 img").removeClass('opacity-on');
+    $("#sankaku6 img").removeClass('opacity-on');
+  });
+
+  $("#sankaku3").hover(function() {
+    $("#sankaku1 img").removeClass('opacity-on');
+    $("#sankaku2 img").removeClass('opacity-on');
+    $("#sankaku3 img").addClass('opacity-on');
+    $("#sankaku4 img").removeClass('opacity-on');
+    $("#sankaku5 img").removeClass('opacity-on');
+    $("#sankaku6 img").removeClass('opacity-on');
+  });
+
+  $("#sankaku4").hover(function() {
+    $("#sankaku1 img").removeClass('opacity-on');
+    $("#sankaku2 img").removeClass('opacity-on');
+    $("#sankaku3 img").removeClass('opacity-on');
+    $("#sankaku4 img").addClass('opacity-on');
+    $("#sankaku5 img").removeClass('opacity-on');
+    $("#sankaku6 img").removeClass('opacity-on');
+  });
+
+  $("#sankaku5").hover(function() {
+    $("#sankaku1 img").removeClass('opacity-on');
+    $("#sankaku2 img").removeClass('opacity-on');
+    $("#sankaku3 img").removeClass('opacity-on');
+    $("#sankaku4 img").removeClass('opacity-on');
+    $("#sankaku5 img").addClass('opacity-on');
+    $("#sankaku6 img").removeClass('opacity-on');
+  });
+
+  $("#sankaku6").hover(function() {
+    $("#sankaku1 img").removeClass('opacity-on');
+    $("#sankaku2 img").removeClass('opacity-on');
+    $("#sankaku3 img").removeClass('opacity-on');
+    $("#sankaku4 img").removeClass('opacity-on');
+    $("#sankaku5 img").removeClass('opacity-on');
+    $("#sankaku6 img").addClass('opacity-on');
+  });
+</script>
+<!--end //  メニュー▲ -->
+
+<!--------------------------------
+    / script
+---------------------------------->
+
+</body>
+</html>

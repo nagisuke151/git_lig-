@@ -7,7 +7,7 @@
 ---------------------------------*/
 html{
     font-size: 62.5%;
-    width: calc(100vw - 15px); /* マンガビューアー起動時にスクロールバーの分左にずれる */
+    width: calc(100vw - 17px); /* マンガビューアー起動時にスクロールバーの分左にずれる */
 }
 
 body{
@@ -245,7 +245,6 @@ h1{
 
 .rpg-right{
     width: 100%;
-    min-width: 700px;
     padding:  15px 30px 20px 30px;
     margin-left: 10px;
     border-radius: 20px;
@@ -253,8 +252,17 @@ h1{
 }
 
 .sankaku{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 15.6px;
+    border-color: transparent transparent transparent #ffffff;
     margin-top: 6px;
     opacity: 0;
+}
+
+.sankaku-r{
+    border-color: transparent transparent transparent #ff0000;
 }
 
 .opacity-on{
@@ -498,7 +506,6 @@ h1{
 }
 
 .footer .rpg-right{
-    min-width: 700px;
     padding:  15px 30px 20px 30px;
     margin-left: 0px;
 }

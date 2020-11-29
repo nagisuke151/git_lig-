@@ -37,32 +37,32 @@
             <div class="rpg-left border-w">
             <div class="menu">
                 <dl class="menu1" id="sankaku1">
-                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on" id="sankaku-r"></dt>
+                    <dt id="sankaku-r"><div class="sankaku opacity-on"></div></dt>
                     <dd onclick="clickBtn1(),clickBtn2()" style="cursor:pointer;" id="at-btn">たたかう</dd>
                 </dl>
 
                 <dl class="menu2" id="sankaku2">
-                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dt><div class="sankaku"></div></dt>
                     <dd><a href="#1">じょうほう</a></dd>
                 </dl>
 
                 <dl class="menu3" id="sankaku3">
-                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dt><div class="sankaku"></div></dt>
                     <dd><a href="#2">あらすじ</a></dd>
                 </dl>
 
                 <dl class="menu4" id="sankaku4">
-                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dt><div class="sankaku"></div></dt>
                     <dd><a href="#3">りゆう</a></dd>
                 </dl>
 
                 <dl class="menu5" id="sankaku5">
-                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dt><div class="sankaku"></div></dt>
                     <dd><a href="#4">スキル</a></dd>
                 </dl>
 
                 <dl class="menu6" id="sankaku6">
-                    <dt><img src="images/sankaku.png" alt="三角形" class="sankaku"></dt>
+                    <dt><div class="sankaku"></div></dt>
                     <dd class="dd-last"><a href="#5">おたから</a></dd>
                 </dl>
             </div>
@@ -224,35 +224,39 @@
 <!--footer-->
 <footer class="footer">
 
+    <div id="trigger1"></div>
+
     <div class="space"> 
         <div class="container rpg-box">
 
             <div class="rpg-right border-w">
-                <div id="at-text4"><p id="js-target3">ヤマシタ ナギ は<br>仲間 に なりたそう に<br>こちら を みている ！</p></div>
-                <div id="at-text5"><p id="js-target4">ダミー1ダミー1ダミー1ダミー1ダミー1ダミーダミー1ダミー1ダミーダミー1ダミー1ダミー</p></div>
-                <div id="at-text6"><p id="js-target5">ダミー2ダミー2ダミー2</p></div>
+                <div id="at-text4"><p id="js-target4">ヤマシタ ナギ は<br>仲間 に なりたそう に<br>こちら を みている ！</p></div>
+                <div id="at-text5"><p id="js-target5">ダミー1ダミー1ダミー1ダミー1ダミー1ダミーダミー1ダミー1ダミーダミー1ダミー1ダミー</p></div>
+                <div id="at-text6"><p id="js-target6">ダミー2ダミー2ダミー2</p></div>
+                <div id="at-text7"><p id="js-target7">ダミー3</p></div>
+                <div id="at-text8"><p id="js-target8">ダミー4</p></div>
             </div>
 
             <div class="rpg-left border-w">       
                 <div class="menu">
                     <dl class="menu7" id="sankaku7">
-                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
-                        <dd onclick="clickBtn3()" style="cursor:pointer;" id="at-btn">仲間にする</dd>
+                        <dt><div class="sankaku opacity-on"></div></dt>
+                        <dd onclick="clickBtn5()" style="cursor:pointer;" id="at-btn">仲間にする</dd>
                     </dl>
 
                     <dl class="menu8" id="sankaku8">
-                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
-                        <dd onclick="clickBtn4()" style="cursor:pointer;" id="at-btn">採用する</dd>
+                        <dt><div class="sankaku"></div></dt>
+                        <dd onclick="clickBtn6()" style="cursor:pointer;" id="at-btn">採用する</dd>
                     </dl>
 
                     <dl class="menu9" id="sankaku9">
-                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
-                        <dd onclick="clickBtn5()" style="cursor:pointer;" id="at-btn">登用する</dd>
+                        <dt><div class="sankaku"></div></dt>
+                        <dd onclick="clickBtn7()" style="cursor:pointer;" id="at-btn">登用する</dd>
                     </dl>
 
                     <dl class="menu10" id="sankaku10">
-                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
-                        <dd onclick="clickBtn5()" style="cursor:pointer;" id="at-btn">雇用する</dd>
+                        <dt><div class="sankaku"></div></dt>
+                        <dd onclick="clickBtn8()" style="cursor:pointer;" id="at-btn">雇用する</dd>
                     </dl>
                 </div>
             </div>                            
@@ -311,7 +315,7 @@
             });
             const div = document.getElementById('at-btn');
             div.classList.add('red');
-            document.getElementById('sankaku-r').src='/images/sankaku-r.png';
+            $("#sankaku-r div").addClass('sankaku-r');
         }
         else{
             // blockで表示
@@ -397,63 +401,201 @@ $(function () {
 </script>
 <!--end //  モーダル -->
 
-<!-- メニュー -->
+<!-- メニュー1 -->
 <script>
 $("#sankaku1").hover(function() {
-    $("#sankaku1 img").addClass('opacity-on');
-    $("#sankaku2 img").removeClass('opacity-on');
-    $("#sankaku3 img").removeClass('opacity-on');
-    $("#sankaku4 img").removeClass('opacity-on');
-    $("#sankaku5 img").removeClass('opacity-on');
-    $("#sankaku6 img").removeClass('opacity-on');
+    $("#sankaku1 div").addClass('opacity-on');
+    $("#sankaku2 div").removeClass('opacity-on');
+    $("#sankaku3 div").removeClass('opacity-on');
+    $("#sankaku4 div").removeClass('opacity-on');
+    $("#sankaku5 div").removeClass('opacity-on');
+    $("#sankaku6 div").removeClass('opacity-on');
   });
 
   $("#sankaku2").hover(function() {
-    $("#sankaku1 img").removeClass('opacity-on');
-    $("#sankaku2 img").addClass('opacity-on');
-    $("#sankaku3 img").removeClass('opacity-on');
-    $("#sankaku4 img").removeClass('opacity-on');
-    $("#sankaku5 img").removeClass('opacity-on');
-    $("#sankaku6 img").removeClass('opacity-on');
+    $("#sankaku1 div").removeClass('opacity-on');
+    $("#sankaku2 div").addClass('opacity-on');
+    $("#sankaku3 div").removeClass('opacity-on');
+    $("#sankaku4 div").removeClass('opacity-on');
+    $("#sankaku5 div").removeClass('opacity-on');
+    $("#sankaku6 div").removeClass('opacity-on');
   });
 
   $("#sankaku3").hover(function() {
-    $("#sankaku1 img").removeClass('opacity-on');
-    $("#sankaku2 img").removeClass('opacity-on');
-    $("#sankaku3 img").addClass('opacity-on');
-    $("#sankaku4 img").removeClass('opacity-on');
-    $("#sankaku5 img").removeClass('opacity-on');
-    $("#sankaku6 img").removeClass('opacity-on');
+    $("#sankaku1 div").removeClass('opacity-on');
+    $("#sankaku2 div").removeClass('opacity-on');
+    $("#sankaku3 div").addClass('opacity-on');
+    $("#sankaku4 div").removeClass('opacity-on');
+    $("#sankaku5 div").removeClass('opacity-on');
+    $("#sankaku6 div").removeClass('opacity-on');
   });
 
   $("#sankaku4").hover(function() {
-    $("#sankaku1 img").removeClass('opacity-on');
-    $("#sankaku2 img").removeClass('opacity-on');
-    $("#sankaku3 img").removeClass('opacity-on');
-    $("#sankaku4 img").addClass('opacity-on');
-    $("#sankaku5 img").removeClass('opacity-on');
-    $("#sankaku6 img").removeClass('opacity-on');
+    $("#sankaku1 div").removeClass('opacity-on');
+    $("#sankaku2 div").removeClass('opacity-on');
+    $("#sankaku3 div").removeClass('opacity-on');
+    $("#sankaku4 div").addClass('opacity-on');
+    $("#sankaku5 div").removeClass('opacity-on');
+    $("#sankaku6 div").removeClass('opacity-on');
   });
 
   $("#sankaku5").hover(function() {
-    $("#sankaku1 img").removeClass('opacity-on');
-    $("#sankaku2 img").removeClass('opacity-on');
-    $("#sankaku3 img").removeClass('opacity-on');
-    $("#sankaku4 img").removeClass('opacity-on');
-    $("#sankaku5 img").addClass('opacity-on');
-    $("#sankaku6 img").removeClass('opacity-on');
+    $("#sankaku1 div").removeClass('opacity-on');
+    $("#sankaku2 div").removeClass('opacity-on');
+    $("#sankaku3 div").removeClass('opacity-on');
+    $("#sankaku4 div").removeClass('opacity-on');
+    $("#sankaku5 div").addClass('opacity-on');
+    $("#sankaku6 div").removeClass('opacity-on');
   });
 
   $("#sankaku6").hover(function() {
-    $("#sankaku1 img").removeClass('opacity-on');
-    $("#sankaku2 img").removeClass('opacity-on');
-    $("#sankaku3 img").removeClass('opacity-on');
-    $("#sankaku4 img").removeClass('opacity-on');
-    $("#sankaku5 img").removeClass('opacity-on');
-    $("#sankaku6 img").addClass('opacity-on');
+    $("#sankaku1 div").removeClass('opacity-on');
+    $("#sankaku2 div").removeClass('opacity-on');
+    $("#sankaku3 div").removeClass('opacity-on');
+    $("#sankaku4 div").removeClass('opacity-on');
+    $("#sankaku5 div").removeClass('opacity-on');
+    $("#sankaku6 div").addClass('opacity-on');
   });
 </script>
-<!--end //  メニュー -->
+<!--end //  メニュー1 -->
+
+<!-- footer-js -->
+<script>
+    // 初期表示は非表示
+    document.getElementById("at-text5").style.display ="none";
+    document.getElementById("at-text6").style.display ="none";
+    document.getElementById("at-text7").style.display ="none";
+    document.getElementById("at-text8").style.display ="none";
+
+    const at4 = document.getElementById("at-text4");
+    const at5 = document.getElementById("at-text5");
+    const at6 = document.getElementById("at-text6");
+    const at7 = document.getElementById("at-text7");
+    const at8 = document.getElementById("at-text8");
+    
+    function clickBtn5(){    
+        if(at5.style.display=="none"){
+            at4.style.display ="none";
+            at5.style.display ="block";
+            at6.style.display ="none";
+            at7.style.display ="none";
+            at8.style.display ="none";
+            $('#js-target5').t({
+            speed_vary:false,
+            blink:false,
+            speed:60,
+            });
+        }
+        else{
+        }
+    }
+
+    function clickBtn6(){    
+        if(at6.style.display=="none"){
+            at4.style.display ="none";
+            at5.style.display ="none";
+            at6.style.display ="block";
+            at7.style.display ="none";
+            at8.style.display ="none";
+            $('#js-target6').t({
+            speed_vary:false,
+            blink:false,
+            speed:60,
+            });
+        }
+        else{
+        }
+    }
+
+    function clickBtn7(){    
+        if(at7.style.display=="none"){
+            at4.style.display ="none";
+            at5.style.display ="none";
+            at6.style.display ="none";
+            at7.style.display ="block";
+            at8.style.display ="none";
+            $('#js-target7').t({
+            speed_vary:false,
+            blink:false,
+            speed:60,
+            });
+        }
+        else{
+        }
+    }
+
+    function clickBtn8(){    
+        if(at8.style.display=="none"){
+            at4.style.display ="none";
+            at5.style.display ="none";
+            at6.style.display ="none";
+            at7.style.display ="none";
+            at8.style.display ="block";
+            $('#js-target8').t({
+            speed_vary:false,
+            blink:false,
+            speed:60,
+            });
+        }
+        else{
+        }
+    }
+
+</script>
+<!--end //  footer-js -->
+
+<!-- メニュー2 -->
+<script>
+    $("#sankaku7").hover(function() {
+    $("#sankaku7 div").addClass('opacity-on');
+    $("#sankaku8 div").removeClass('opacity-on');
+    $("#sankaku9 div").removeClass('opacity-on');
+    $("#sankaku10 div").removeClass('opacity-on');
+    });
+
+    $("#sankaku8").hover(function() {
+    $("#sankaku7 div").removeClass('opacity-on');
+    $("#sankaku8 div").addClass('opacity-on');
+    $("#sankaku9 div").removeClass('opacity-on');
+    $("#sankaku10 div").removeClass('opacity-on');
+    });
+
+    $("#sankaku9").hover(function() {
+    $("#sankaku7 div").removeClass('opacity-on');
+    $("#sankaku8 div").removeClass('opacity-on');
+    $("#sankaku9 div").addClass('opacity-on');
+    $("#sankaku10 div").removeClass('opacity-on');
+    });
+
+    $("#sankaku10").hover(function() {
+    $("#sankaku7 div").removeClass('opacity-on');
+    $("#sankaku8 div").removeClass('opacity-on');
+    $("#sankaku9 div").removeClass('opacity-on');
+    $("#sankaku10 div").addClass('opacity-on');
+    });
+</script>
+<!--end //  メニュー2 -->
+
+<script>
+    var controller;
+    $(document).ready(function($) {
+    // init controller
+    controller = new ScrollMagic();
+    });
+</script>
+
+<script>
+    $(document).ready(function($) {
+    var tween = $('#js-target4').t({
+        speed_vary:false,
+        blink:false,
+        speed:60,
+        });
+    var scene = new ScrollScene({triggerElement: "#trigger1"}).setTween(tween);
+    scene.addIndicators();
+    });
+
+    </script>
 
 <!--------------------------------
     / script

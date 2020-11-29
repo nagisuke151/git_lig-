@@ -224,15 +224,42 @@
 <!--footer-->
 <footer class="footer">
 
-    <p>ヤマシタ ナギ は<br>なかま に なりたそう に<br>こちら を みている ！</p>
+    <div class="space"> 
+        <div class="container rpg-box">
 
-    <ul>
-        <li>仲間にする</li>
-        <li>採用する</li>
-        <li>登用する</li>
-        <li>雇う</li>
-    </ul>
+            <div class="rpg-right border-w">
+                <div id="at-text4"><p id="js-target">ヤマシタ ナギ は<br>なかま に なりたそう に<br>こちら を みている ！</p></div>
+                <div id="at-text5"><p id="js-target1">ダミー1ダミー1ダミー1ダミー1ダミー1ダミーダミー1ダミー1ダミーダミー1ダミー1ダミー</p></div>
+                <div id="at-text6"><p id="js-target2">ダミー2ダミー2ダミー2</p></div>
+            </div>
 
+            <div class="rpg-left border-w">       
+                <div class="menu">
+                    <dl class="menu7" id="sankaku7">
+                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
+                        <dd onclick="clickBtn3()" style="cursor:pointer;" id="at-btn">仲間にする</dd>
+                    </dl>
+
+                    <dl class="menu8" id="sankaku8">
+                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
+                        <dd onclick="clickBtn4()" style="cursor:pointer;" id="at-btn">採用する</dd>
+                    </dl>
+
+                    <dl class="menu9" id="sankaku9">
+                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
+                        <dd onclick="clickBtn5()" style="cursor:pointer;" id="at-btn">登用する</dd>
+                    </dl>
+
+                    <dl class="menu10" id="sankaku10">
+                        <dt><img src="images/sankaku.png" alt="三角形" class="sankaku opacity-on"></dt>
+                        <dd onclick="clickBtn5()" style="cursor:pointer;" id="at-btn">雇う</dd>
+                    </dl>
+                </div>
+            </div>                            
+        </div>
+    </div>
+
+    
 </footer>
 <!--end // footer-->
 
@@ -244,7 +271,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 
 <!-- 点滅 -->
-<script type="text/javascript">
+<script>
     // 点滅「on」状態
     function show()
     {

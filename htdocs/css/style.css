@@ -490,6 +490,19 @@ h1{
 	image-rendering: pixelated;
 }
 
+.footer .rpg-left{
+    min-width: 230px;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.footer .rpg-right{
+    width: 700px;
+    padding:  15px 30px 20px 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    line-height : 42.667px;
+}
 
 
 

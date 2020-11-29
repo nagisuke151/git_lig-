@@ -59,7 +59,7 @@ p{
 }
 
 .space{
-    max-width: 970px;
+    width: 85%;
     margin: auto;
 }
 
@@ -244,7 +244,8 @@ h1{
 }
 
 .rpg-right{
-    width: 700px;
+    width: 100%;
+    min-width: 700px;
     padding:  15px 30px 20px 30px;
     margin-left: 10px;
     border-radius: 20px;
@@ -491,17 +492,23 @@ h1{
 }
 
 .footer .rpg-left{
-    min-width: 230px;
+    min-width: 200px;
     padding: 20px 30px;
-    border-radius: 20px;
+    margin-left: 10px;
 }
 
 .footer .rpg-right{
-    width: 700px;
+    min-width: 700px;
     padding:  15px 30px 20px 30px;
-    margin-left: 10px;
-    border-radius: 20px;
-    line-height : 42.667px;
+    margin-left: 0px;
+}
+
+.footer dd{
+    margin-left: 30px;
+}
+
+.footer p{
+    margin-bottom: 10px;
 }
 
 

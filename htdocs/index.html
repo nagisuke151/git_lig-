@@ -18,6 +18,16 @@
 
 <body class="background">
 
+<!-- encount-->
+<div class="animated bounceInDown">
+    <div class="encount encount-1"></div>
+    <div class="encount encount-2"></div>
+    <div class="encount encount-3"></div>
+    <div class="encount encount-4"></div>
+    <div class="encount encount-5"></div>
+</div>
+<!--end // encount-->
+
 <!--header-->
 <header class="header">
     <div class="title">
@@ -159,17 +169,19 @@
 <section id="modalArea" class="modalArea">
   <div id="modalBg" class="modalBg"></div>
   <div class="modalWrapper">
-    <div class="modalContents">
-      <h4>ダミーダミーダミー</h4>
-      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-      <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-    </div>
-    <div id="closeModal" class="closeModal"><!-- closeここでリデザインする -->
-      ×
-    </div>
+        <div class="sticky">
+            <div id="closeModal" class="closeModal"><!-- closeここでリデザインする -->
+            ×
+            </div>
+        </div>
+        <div class="modalContents">
+            <h4>ダミーダミーダミー</h4>
+            <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+            <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+            <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+            <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+            <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+        </div>
   </div>
 <!-- モーダルエリアここまで -->
 
@@ -216,6 +228,8 @@
 <!--end // portfolio-->
 
 </main>
+
+<button onclick="clickBtn3()" id="pagetop">pagetop</button>
 
 <div class="dan3 fotter_dan"></div>
 <div class="dan2"></div>
@@ -576,6 +590,34 @@ $("#sankaku1").hover(function() {
 </script>
 <!--end //  メニュー2 -->
 
+<!-- pagetop -->
+<script src="js/anime.min.js"></script>
+<script>
+function pagetop1(){
+    $(window).scrollTop(0);
+}
+function pagetop2(){
+    anime({
+    targets: '.encount',
+    width: 0,
+    duration: 1800,
+    easing: 'easeOutExpo'
+    })
+}
+function clickBtn3(){
+    anime({
+    targets: '.encount',
+    width: '100%',
+    duration: 1800,
+    easing: 'easeOutExpo'
+    })
+    setTimeout("pagetop1()",1500);
+    setTimeout("pagetop2()",2300);
+
+}
+</script>
+<!--end //  pagetop -->
+
 <script>
     var controller;
     $(document).ready(function($) {
@@ -594,8 +636,7 @@ $("#sankaku1").hover(function() {
     var scene = new ScrollScene({triggerElement: "#trigger1"}).setTween(tween);
     scene.addIndicators();
     });
-
-    </script>
+</script>
 
 <!--------------------------------
     / script
